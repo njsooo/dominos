@@ -100,9 +100,13 @@ button {
   width: auto;
   max-width: 1920px;
 }
+#main-slider img {
+  width: 100%;
+  height: 100%;
+}
 #main-slider .swiper-pagination {
-  bottom: 115px;
-  left: 19%;
+  bottom: 20%;
+  left: 18.5%;
   width: auto;
   padding: 4px 14px;
   border-radius: 20px;
@@ -110,15 +114,16 @@ button {
   color: #fff;
 }
 #main-slider .swiper-button-prev {
-  left: 150px;
+  left: 10%;
 }
 #main-slider .swiper-button-next {
-  right: 150px;
+  right: 10%;
 }
 
 #order {
   position: relative;
   z-index: 1;
+  margin-top: 50px;
   transform: translateY(-80px);
 }
 #order ul {
@@ -513,12 +518,14 @@ button {
   #header select {
     display: none;
   }
-  #main-slider {
-    display: none;
-  }
   #main-slider .container {
     width: 100%;
     max-width: none;
+  }
+  #main-slider .swiper-pagination {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #order {
     transform: none;

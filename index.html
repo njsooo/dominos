@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도미노피자</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"
+      integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <div class="container">
+        <a href="#" class="logo" aria-label="도미노피자 로고"></a>
+
+        <button class="btn-toggle-sidebar">
+          <img src="./assets/icon_hamburger.png" alt="" />
+        </button>
+
+        <ul class="menu-list">
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">e-쿠폰</a></li>
+          <li><a href="#">상품권 선물</a></li>
+          <li><a href="#">이벤트·제휴</a></li>
+          <li><a href="#">매장검색</a></li>
+          <li><a href="#">더보기</a></li>
+        </ul>
+
+        <form action="#">
+          <input type="text" placeholder="주소를 입력해주세요" />
+        </form>
+
+        <ul class="link-list">
+          <li>
+            <a href="#">
+              <img src="./assets/icon_my.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/icon_cart.png" alt="" />
+            </a>
+          </li>
+        </ul>
+
+        <select>
+          <option value="">KOR</option>
+          <option value="">ENG</option>
+        </select>
+      </div>
+    </div>
+    <!-- // HEADER -->
+
+    <main id="main">
+      <!-- MAIN SLIDER -->
+      <div id="main-slider">
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/slide_01.jpg" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/slide_02.jpg" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/slide_03.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // MAIN SLIDER -->
+
+      <!-- ORDER -->
+      <div id="order">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="icon first"></i>
+                <span class="text red">배달주문</span>
+                <p class="desc">등급별 최대 30%</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="icon second"></i>
+                <span class="text blue">포장주문</span>
+                <p class="desc">등급별 최대 40%</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="icon third"></i>
+                <span class="text black">퀵오더</span>
+                <p class="desc">
+                  자주 이용하는 메뉴를<br />
+                  더 빠르게 주문해보세요!
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- // ORDER -->
+
+      <!-- MENU -->
+      <div id="menu">
+        <div class="container">
+          <header class="header">
+            <h2 class="title">메뉴 소개</h2>
+            <div class="menu">
+              <button>신메뉴</button>
+              <button>프리미엄</button>
+              <button>하프앤하프 시그니처</button>
+              <button>클래식</button>
+              <button>스트릿</button>
+            </div>
+          </header>
+
+          <ul class="content">
+            <li>
+              <img src="./assets/pizza_0.png" alt="" />
+              <h3 class="title">나이스 투 미트 유 피자</h3>
+              <p>R 21,900원 L 24,900원</p>
+              <button>선택</button>
+            </li>
+            <li>
+              <img src="./assets/pizza_1.png" alt="" />
+              <h3 class="title">스위트바질불고기 치즈링</h3>
+              <p>R 22,900원 L 25,900원</p>
+              <button>선택</button>
+            </li>
+            <li>
+              <img src="./assets/pizza_2.png" alt="" />
+              <h3 class="title">트러플베이컨 치즈링</h3>
+              <p>R 21,900원 L 24,900원</p>
+              <button>선택</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- // MENU -->
+
+      <!-- FIND STORE -->
+      <div id="find-store">
+        <div class="container">
+          <h2 class="title">매장찾기</h2>
+
+          <form action="#">
+            <input type="text" placeholder="매장명을 검색해주세요" />
+          </form>
+
+          <div class="tags">
+            <span>24시간</span>
+            <span>인기매장</span>
+            <span>할인매장</span>
+          </div>
+        </div>
+      </div>
+      <!-- // FIND STORE -->
+
+      <!-- BENEFITS -->
+      <div id="benefits">
+        <div class="container">
+          <h2 class="title">
+            도미노피자의 <span>특별한 매니아 혜택</span>을 누려보세요!
+          </h2>
+          <a href="#" class="login">로그인</a>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./assets/card_01.png" alt="#" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/card_02.gif" alt="#" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/card_03.png" alt="#" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- // BENEFITS -->
+
+      <!-- STORY -->
+      <div id="story">
+        <div class="container">
+          <div class="left">
+            <h2 class="title">도미노피자<br /><b>이야기</b></h2>
+            <p class="desc">도미노피자의 다양한 스토리를 확인해보세요.</p>
+            <ul class="icon-list">
+              <li>
+                <a href="#" aria-label="유튜브 바로가기"
+                  ><img src="./assets/icon_youtube.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="인스타 바로가기"
+                  ><img src="./assets/icon_facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" aria-label="페이스북 바로가기"
+                  ><img src="./assets/icon_insta.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./assets/story_0.png" alt="#" />
+                  </div>
+                  <h4 class="title">아보카도와 새우로 더 맛있게!</h4>
+                  <p class="desc">슈퍼시드 화이버 함유 도우로 풍미 UPGRADE!</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./assets/story_1.png" alt="#" />
+                  </div>
+                  <h4 class="title">도미노스팟 1,000</h4>
+                  <p class="desc">밖에서 피자 먹고 싶을 때 주문!</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img-wrap">
+                    <img src="./assets/story_2.png" alt="#" />
+                  </div>
+                  <h4 class="title">가맹점 모집</h4>
+                  <p class="desc">
+                    도미노피자와 함께하실 가맹점주님들을 모십니다!
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // STORY -->
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <a href="#" class="logo"></a>
+          <span class="phone">1577-3082</span>
+
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li>
+              <a href="#"><b>개인정보처리방침</b></a>
+            </li>
+            <li>
+              <a href="#"><b>위치기반서비스</b></a>
+            </li>
+            <li><a href="#">청소년보호방침</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">가맹점모집</a></li>
+            <li><a href="#">단체주문</a></li>
+          </ul>
+
+          <address>
+            <p>
+              06223 서울특별시 강남구 역삼로25길 35(역삼동, 청오큐브타워)
+              청오디피케이㈜ | 대표이사 : 오광현,김영훈
+            </p>
+            <p>
+              사업자 등록번호: 220-81-03371 | 통신판매업신고: 강남 5064호 |
+              개인정보 보호책임자 : 이명윤
+            </p>
+            <p>문의 : webmaster@dominos.co.kr</p>
+            <p>Copyright &copy; Domino's Pizza. All rights reserved.</p>
+            <p>
+              청오디피케이㈜의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일,
+              앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송,
+              스크래핑 등 무단 사용할 수 없습니다.
+            </p>
+            <p>
+              도미노피자에서 판매되는 모든 상품은 청오디피케이㈜에서 책임지고
+              있습니다.
+            </p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <ul>
+            <li>
+              <img src="./assets/award_1.png" alt="" />
+              <p>식품안전<br />경영시스템 인증</p>
+            </li>
+
+            <li>
+              <img src="./assets/award_2.png" alt="" />
+              <p>지식경제부<br />우수디자인 선정</p>
+            </li>
+
+            <li>
+              <img src="./assets/award_3.png" alt="" />
+              <p>
+                2022년 고객이 가장 추천하는 기업<br />피자전문점 부문 10년 연속
+                1위
+              </p>
+            </li>
+
+            <li>
+              <img src="./assets/award_4.png" alt="" />
+              <p>
+                2022년 한국산업 고객만족도<br />피자전문점 부문 8년 연속 1위
+              </p>
+            </li>
+
+            <li>
+              <img src="./assets/award_5.png" alt="" />
+              <p>
+                2022 프리미엄브랜드지수<br />피자전문점 부문 7년 연속 1위 수상
+              </p>
+            </li>
+
+            <li>
+              <img src="./assets/award_6.png" alt="" />
+              <p>
+                대학생 1000명이 선택한<br />2019 올해의 핫 브랜드 캠퍼스
+                잡앤조이 선정
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- // FOOTER -->
+  </body>
+</html>

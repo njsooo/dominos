@@ -36,6 +36,7 @@ button {
 }
 #header .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 #header .logo {
@@ -50,9 +51,8 @@ button {
 }
 #header .menu-list {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
-  margin-left: 30px;
 }
 #header .menu-list a {
   position: relative;
@@ -72,22 +72,32 @@ button {
 #header .menu-list a:hover::after {
   transform: scale(1);
 }
-#header form {
-  margin-left: 60px;
-}
-#header form input {
-  padding: 8px 8px;
-  border: 0;
-  font-size: 1rem;
-}
-#header .link-list {
+#header .right {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
-#header select {
+#header .right form {
+  display: none;
+}
+#header .right form input {
+  max-width: 180px;
+  padding: 8px 8px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+#header .right form input:focus {
+  border: 0;
+  outline: 1px solid #ddd;
+}
+#header .right .link-list {
+  display: flex;
+  gap: 10px;
+}
+#header .right select {
   width: 60px;
   height: 27px;
-  margin-left: 20px;
   padding: 0 0 0 8px;
   border: 1px solid #ddd;
   border-radius: 13.5px;
@@ -292,6 +302,7 @@ button {
 }
 .footer-top ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 25px;
 }
@@ -357,6 +368,9 @@ button {
   #header .menu-list {
     display: none;
   }
+  #header .right {
+    display: none;
+  }
   #header form {
     display: none;
   }
@@ -400,4 +414,19 @@ button {
   #menu article .menu li .price {
     font-size: 14px;
   }
-}/*# sourceMappingURL=menu.css.map */
+  .footer-top ul {
+    flex-direction: column;
+  }
+  .footer-top address {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-top .phone {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
